@@ -1,0 +1,9 @@
+syntax: glob
+*.pyc
+*~
+*.o
+*.hi
+\#*\#
+
+syntax: regexp
+^\.ropeproject/.*
