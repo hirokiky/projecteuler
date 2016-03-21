@@ -1,0 +1,5 @@
+(defn mul3or5[n] (or (= (rem n 5) 0)
+                     (= (rem n 3) 0)))
+(println (->> (range 1000)
+              (filter mul3or5)
+              (reduce +)))
