@@ -1,9 +1,6 @@
 fn main() {
-    let mut ret = 0;
-    for n in 1..1000 {
-        if (n % 3 == 0) | (n % 5 == 0) {
-            ret += n;
-        }
-    }
-    println!("The answer is {}", ret);
+    let r = (1..1000)
+        .filter(|n| (n % 3 == 0) | (n % 5 == 0))
+        .fold(0, |sum, i| sum + i);
+    println!("The answer is {}", r)
 }
